@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrightSmile Dental Care</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <div class="logo-icon">🦷</div>
+      BrightSmile
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#appointment" class="nav-cta">Book Appointment</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#why" onclick="closeMobile()">Why Us</a>
+  <a href="#testimonials" onclick="closeMobile()">Reviews</a>
+  <a href="#appointment" onclick="closeMobile()">Book Appointment</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge"><span></span> Trusted Dental Care Since 2008</div>
+      <h1>Your Smile,<br><em>Our Priority</em></h1>
+      <p class="hero-sub">Experience compassionate, world-class dental care in a warm and welcoming environment. We blend advanced technology with a gentle touch — because your smile deserves the best.</p>
+      <div class="btn-group">
+        <a href="#appointment" class="btn-primary">📅 Book Appointment</a>
+        <a href="#contact" class="btn-outline">📞 Contact Us</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">5,000+</div>
+          <div class="stat-label">Happy Patients</div>
+        </div>
+        <div>
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div>
+          <div class="stat-num">4.9★</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div style="position: relative; width: 100%; max-width: 420px;">
+        <div class="hero-card">
+          <div class="hero-card-badge">✅ Available Today</div>
+          <h3>Your next appointment is one click away</h3>
+          <p>Book a consultation and get a free initial checkup on your first visit. Flexible slots available 7 days a week.</p>
+          <div class="doctor-row">
+            <div class="doctor-avatar">👩‍⚕️</div>
+            <div>
+              <div class="doctor-name">Dr. Priya Sharma</div>
+              <div class="doctor-title">Chief Dental Surgeon</div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-chip chip-1">
+          <div class="chip-dot" style="background:#34d399;"></div>
+          Clinic Open Now
+        </div>
+        <div class="floating-chip chip-2">
+          🦷 Pain-free procedures
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img">
+        <div class="about-img-emoji">🏥</div>
+        <div class="about-img-label">BrightSmile Dental Care</div>
+        <div style="font-size:.82rem; color: var(--deep-blue); font-weight: 500;">Chennai, Tamil Nadu</div>
+      </div>
+      <div class="about-text fade-up">
+        <div class="section-tag">About Us</div>
+        <h2>Caring for smiles<br>since 2008</h2>
+        <p>BrightSmile Dental Care was founded with a single mission: to provide exceptional, patient-centred dental care that puts your comfort first. Located in the heart of Chennai, our state-of-the-art clinic has been a trusted partner for over 5,000 families across the city.</p>
+        <p>We believe dental visits should never be stressful. From the moment you walk in, our friendly team ensures you feel heard, comfortable, and in the very best hands. We use the latest sterilisation protocols and digital imaging technology to deliver precise, painless treatments every single time.</p>
+        <div class="doctor-card">
+          <div class="doctor-card-avatar">👩‍⚕️</div>
+          <div>
+            <h4>Dr. Priya Sharma</h4>
+            <div class="role">Chief Dental Surgeon & Founder</div>
+            <p>MDS – Orthodontics & Dentofacial Orthopaedics | 15+ years of clinical experience | Fellow, Indian Dental Association</p>
+            <div class="tag-list">
+              <span class="tag">Orthodontics</span>
+              <span class="tag">Implantology</span>
+              <span class="tag">Cosmetic Dentistry</span>
+              <span class="tag">Root Canal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="services-header fade-up">
+      <div class="section-tag">Our Services</div>
+      <h2>Comprehensive dental care<br>for every need</h2>
+      <p class="section-lead">From routine cleanings to advanced restorative procedures, we offer a full spectrum of dental treatments using the latest technology.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon">🪥</div>
+        <h3>Teeth Cleaning</h3>
+        <p>Professional scaling and polishing to remove plaque, tartar, and surface stains — leaving your teeth spotlessly clean and your gums healthy.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">✨</div>
+        <h3>Teeth Whitening</h3>
+        <p>Safe, effective whitening treatments that brighten your smile by up to 8 shades. Both in-clinic laser whitening and at-home kits available.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">🔬</div>
+        <h3>Root Canal Treatment</h3>
+        <p>Advanced, virtually painless root canal procedures using rotary endodontic instruments. Save your natural tooth with precision and care.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">😁</div>
+        <h3>Braces & Aligners</h3>
+        <p>Straighten your teeth discreetly with clear aligners or traditional braces. Custom treatment plans designed by our specialist orthodontist.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">🦷</div>
+        <h3>Dental Implants</h3>
+        <p>Permanent, natural-looking tooth replacements that look and feel like real teeth. Titanium implants with a success rate of over 98%.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">🩺</div>
+        <h3>General Check-ups</h3>
+        <p>Comprehensive oral health examinations including digital X-rays, gum health assessment, and personalised dental hygiene guidance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-tag">Why Choose Us</div>
+      <h2>The BrightSmile difference</h2>
+      <p class="section-lead">We go beyond dentistry — we create an experience that keeps you coming back with a smile.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="why-icon">🏆</div>
+        <h3>Experienced Doctors</h3>
+        <p>Our team of specialists brings 15+ years of combined expertise across all areas of dentistry, ensuring you receive world-class treatment.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon">⚡</div>
+        <h3>Advanced Equipment</h3>
+        <p>Digital X-rays, laser dentistry, CAD/CAM technology, and 3D imaging — we invest in the latest tools so treatments are faster and more precise.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon">💰</div>
+        <h3>Affordable Pricing</h3>
+        <p>Quality dental care shouldn't be a luxury. We offer transparent, competitive pricing with easy EMI options and insurance-friendly billing.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon">🛋️</div>
+        <h3>Comfortable Environment</h3>
+        <p>Our clinic is designed to calm your nerves — from the soothing interiors to our gentle team, we make every visit as relaxing as possible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <div class="testimonials-header fade-up">
+      <div class="section-tag">Patient Reviews</div>
+      <h2>What our patients say</h2>
+      <p class="section-lead">Real stories from the families who trust us with their smiles every day.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-up">
+        <span class="quote-mark">"</span>
+        <p>I had severe dental anxiety and avoided clinics for years. Dr. Priya and her team changed everything. My root canal was completely painless and the staff held my hand through it all. I genuinely look forward to my check-ups now!</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">R</div>
+          <div>
+            <div class="testi-name">Ranjini Krishnamurthy</div>
+            <div class="testi-sub">Patient since 2019 · ★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <span class="quote-mark">"</span>
+        <p>My daughter needed braces and we were worried about the process. BrightSmile walked us through every step, the treatment was smooth, and the results are incredible. Her confidence has completely transformed. Thank you!</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">A</div>
+          <div>
+            <div class="testi-name">Arun Balakrishnan</div>
+            <div class="testi-sub">Patient since 2021 · ★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <span class="quote-mark">"</span>
+        <p>The teeth whitening treatment was exceptional — quick, painless, and the results lasted over a year. The clinic is pristine, the equipment is modern, and the staff is incredibly warm. I've recommended BrightSmile to my entire family.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">S</div>
+          <div>
+            <div class="testi-name">Sunita Menon</div>
+            <div class="testi-sub">Patient since 2020 · ★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <span class="quote-mark">"</span>
+        <p>Got two dental implants done here and couldn't be happier. Dr. Priya explained everything clearly and the post-procedure care was excellent. The pricing was fair and transparent — no hidden costs. Truly the best clinic in Chennai.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">V</div>
+          <div>
+            <div class="testi-name">Vikram Subramaniam</div>
+            <div class="testi-sub">Patient since 2022 · ★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section id="appointment">
+  <div class="section-inner">
+    <div class="appt-grid">
+      <div class="appt-info fade-up">
+        <div class="section-tag">Book Appointment</div>
+        <h2>Ready for a brighter smile?</h2>
+        <p class="section-lead">Schedule your visit in under 2 minutes. Our team will confirm your slot within 24 hours.</p>
+        <div class="appt-feature">
+          <div class="appt-feature-icon">📞</div>
+          <div>
+            <h4>Quick Confirmation</h4>
+            <p>We'll call or WhatsApp you within a few hours to confirm your appointment time.</p>
+          </div>
+        </div>
+        <div class="appt-feature">
+          <div class="appt-feature-icon">🆓</div>
+          <div>
+            <h4>Free First Checkup</h4>
+            <p>New patients receive a complimentary initial oral health examination.</p>
+          </div>
+        </div>
+        <div class="appt-feature">
+          <div class="appt-feature-icon">📅</div>
+          <div>
+            <h4>Flexible Timings</h4>
+            <p>Morning, afternoon, and evening slots available 7 days a week for your convenience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <div class="form-card">
+          <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:400; color:var(--navy); margin-bottom:1.5rem;">Book Your Visit</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" id="f-name" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" id="f-phone" placeholder="+91 98765 43210" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="f-email" placeholder="you@email.com" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Preferred Date *</label>
+              <input type="date" id="f-date" />
+            </div>
+            <div class="form-group">
+              <label>Service</label>
+              <select id="f-service">
+                <option value="">Select a service</option>
+                <option>Teeth Cleaning</option>
+                <option>Teeth Whitening</option>
+                <option>Root Canal Treatment</option>
+                <option>Braces & Aligners</option>
+                <option>Dental Implants</option>
+                <option>General Check-up</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea id="f-msg" placeholder="Tell us about your concern or any special requirement..."></textarea>
+          </div>
+          <button class="form-submit" onclick="submitForm()">Confirm Appointment →</button>
+          <p class="form-note">🔒 Your information is safe with us. No spam, ever.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="fade-up">
+        <div class="section-tag">Contact Us</div>
+        <h2>Get in touch<br>with us</h2>
+        <p class="section-lead" style="margin-bottom:0;">We're here to answer your questions and help you find the right treatment.</p>
+        <div class="contact-info-list">
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>42, Anna Nagar East,<br>Chennai – 600 102, Tamil Nadu</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 98765 43210<br>+91 44 2345 6789</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@brightsmiledentalcare.in<br>appointments@brightsmiledentalcare.in</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">🕐</div>
+            <div>
+              <h4>Clinic Hours</h4>
+              <p>Mon – Sat: 9:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 4:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <div class="map-container">
+          <div class="map-placeholder">
+            <div class="map-placeholder-icon">🗺️</div>
+            <p><strong>BrightSmile Dental Care</strong><br>42, Anna Nagar East, Chennai</p>
+            <a href="https://maps.google.com/?q=Anna+Nagar+East+Chennai" target="_blank">Open in Google Maps →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">🦷</div>
+          BrightSmile
+        </div>
+        <p style="margin-top:.8rem;">Your trusted partner for comprehensive dental care in Chennai. We believe every smile tells a story — let us help yours shine.</p>
+        <div class="social-row">
+          <a href="#" class="social-btn" title="Facebook">f</a>
+          <a href="#" class="social-btn" title="Instagram">📸</a>
+          <a href="#" class="social-btn" title="Twitter">𝕏</a>
+          <a href="#" class="social-btn" title="WhatsApp">💬</a>
+          <a href="#" class="social-btn" title="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#testimonials">Patient Reviews</a></li>
+          <li><a href="#appointment">Book Appointment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Teeth Cleaning</a></li>
+          <li><a href="#services">Teeth Whitening</a></li>
+          <li><a href="#services">Root Canal</a></li>
+          <li><a href="#services">Braces & Aligners</a></li>
+          <li><a href="#services">Dental Implants</a></li>
+          <li><a href="#services">General Check-up</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Clinic Timings</h4>
+        <div class="footer-timing">
+          Monday – Friday<br>
+          <strong style="color:white;">9:00 AM – 8:00 PM</strong><br><br>
+          Saturday<br>
+          <strong style="color:white;">9:00 AM – 6:00 PM</strong><br><br>
+          Sunday<br>
+          <strong style="color:white;">10:00 AM – 4:00 PM</strong>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 BrightSmile Dental Care. All rights reserved.</p>
+      <p>Made with ❤️ for every smile in Chennai</p>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <div class="toast-icon">✅</div>
+  <div>
+    <h4>Appointment Requested!</h4>
+    <p>We'll confirm your slot within 24 hours.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
